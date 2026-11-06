@@ -1,0 +1,6 @@
+# Java ignore
+*.class
+.idea/
+*.iml
+out/
+target/
