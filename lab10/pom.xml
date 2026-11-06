@@ -1,0 +1,25 @@
+public class Main {
+        public static void main(String[] args) {
+        Jacket jacket1 = new Jacket("The North Face", "L", "Gore-Tex");
+        Jacket jacket2 = new Jacket("Columbia", "M", "Нейлон");
+        Jacket jacket3 = new Jacket("Zara", "XL", "Кожа");
+
+        TShirt tshirt1 = new TShirt("Nike", "M", "Черный");
+        TShirt tshirt2 = new TShirt("Adidas", "L", "Белый");
+
+        Wearable[] clothesToWear = { jacket1, jacket2, jacket3, tshirt1, tshirt2 };
+        Washable[] clothesToWash = { jacket1, jacket2, jacket3, tshirt1, tshirt2 };
+
+        System.out.println("=== Процесс примерки (Wearable) ===");
+        for (Wearable item : clothesToWear) {
+        item.wear();
+        }
+
+        System.out.println();
+
+        System.out.println("=== Процесс стирки (Washable) ===");
+        for (Washable item : clothesToWash) {
+        item.wash();
+        }
+        }
+        }
